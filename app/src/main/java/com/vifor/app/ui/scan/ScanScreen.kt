@@ -35,7 +35,7 @@ import androidx.lifecycle.LifecycleOwner
 import com.vifor.app.data.History
 import com.vifor.app.data.ScanRecord
 import com.vifor.app.data.ViforDatabase
-import com.vifor.app.ml.PlaceholderClassifier
+import com.vifor.app.ml.createClassifier
 import java.io.File
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -50,7 +50,7 @@ fun ScanScreen(
     val context = LocalContext.current
     val lifecycleOwner = context as LifecycleOwner
     val db = remember { ViforDatabase.getInstance(context) }
-    val classifier = remember { PlaceholderClassifier(context) }
+    val classifier = remember { createClassifier(context) }
     val scope = rememberCoroutineScope()
 
     var hasPermission by remember {

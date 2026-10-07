@@ -2,40 +2,6 @@
   "foods": [
     {
       "food_id": 1,
-      "food_name": "Apple",
-      "scientific_name": "Malus domestica",
-      "category": "Fruit",
-      "image_resource": "apple",
-      "benefits": [
-        {
-          "title": "Good source of dietary fiber",
-          "description": "Fiber supports digestion and helps you feel full longer.",
-          "category": "Fiber"
-        }
-      ],
-      "nutrition": [
-        {
-          "name": "Calories",
-          "amount": 52,
-          "unit": "kcal",
-          "daily_value_percent": null
-        },
-        {
-          "name": "Fiber",
-          "amount": 2.4,
-          "unit": "g",
-          "daily_value_percent": 9
-        },
-        {
-          "name": "Vitamin C",
-          "amount": 4.6,
-          "unit": "mg",
-          "daily_value_percent": 5
-        }
-      ]
-    },
-    {
-      "food_id": 2,
       "food_name": "Banana",
       "scientific_name": "Musa acuminata",
       "category": "Fruit",
@@ -69,7 +35,131 @@
       ]
     },
     {
+      "food_id": 2,
+      "food_name": "Mango",
+      "scientific_name": "Mangifera indica",
+      "category": "Fruit",
+      "image_resource": "mango",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
       "food_id": 3,
+      "food_name": "Papaya",
+      "scientific_name": "Carica papaya",
+      "category": "Fruit",
+      "image_resource": "papaya",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 4,
+      "food_name": "Pineapple",
+      "scientific_name": "Ananas comosus",
+      "category": "Fruit",
+      "image_resource": "pineapple",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 5,
+      "food_name": "Coconut",
+      "scientific_name": "Cocos nucifera",
+      "category": "Fruit",
+      "image_resource": "coconut",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 6,
+      "food_name": "Calamansi",
+      "scientific_name": "Citrus x microcarpa",
+      "category": "Fruit",
+      "image_resource": "calamansi",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 7,
+      "food_name": "Watermelon",
+      "scientific_name": "Citrullus lanatus",
+      "category": "Fruit",
+      "image_resource": "watermelon",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 8,
+      "food_name": "Orange",
+      "scientific_name": "Citrus x sinensis",
+      "category": "Fruit",
+      "image_resource": "orange",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 9,
+      "food_name": "Apple",
+      "scientific_name": "Malus domestica",
+      "category": "Fruit",
+      "image_resource": "apple",
+      "benefits": [
+        {
+          "title": "Good source of dietary fiber",
+          "description": "Fiber supports digestion and helps you feel full longer.",
+          "category": "Fiber"
+        }
+      ],
+      "nutrition": [
+        {
+          "name": "Calories",
+          "amount": 52,
+          "unit": "kcal",
+          "daily_value_percent": null
+        },
+        {
+          "name": "Fiber",
+          "amount": 2.4,
+          "unit": "g",
+          "daily_value_percent": 9
+        },
+        {
+          "name": "Vitamin C",
+          "amount": 4.6,
+          "unit": "mg",
+          "daily_value_percent": 5
+        }
+      ]
+    },
+    {
+      "food_id": 10,
+      "food_name": "Guava",
+      "scientific_name": "Psidium guajava",
+      "category": "Fruit",
+      "image_resource": "guava",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 11,
+      "food_name": "Jackfruit",
+      "scientific_name": "Artocarpus heterophyllus",
+      "category": "Fruit",
+      "image_resource": "jackfruit",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 12,
+      "food_name": "Avocado",
+      "scientific_name": "Persea americana",
+      "category": "Fruit",
+      "image_resource": "avocado",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 13,
       "food_name": "Tomato",
       "scientific_name": "Solanum lycopersicum",
       "category": "Vegetable",
@@ -101,6 +191,114 @@
           "daily_value_percent": 4
         }
       ]
+    },
+    {
+      "food_id": 14,
+      "food_name": "Eggplant",
+      "scientific_name": "Solanum melongena",
+      "category": "Vegetable",
+      "image_resource": "eggplant",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 15,
+      "food_name": "Okra",
+      "scientific_name": "Abelmoschus esculentus",
+      "category": "Vegetable",
+      "image_resource": "okra",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 16,
+      "food_name": "Squash",
+      "scientific_name": "Cucurbita maxima",
+      "category": "Vegetable",
+      "image_resource": "squash",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 17,
+      "food_name": "Bitter melon",
+      "scientific_name": "Momordica charantia",
+      "category": "Vegetable",
+      "image_resource": "bitter_melon",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 18,
+      "food_name": "String beans",
+      "scientific_name": "Vigna unguiculata subsp. sesquipedalis",
+      "category": "Vegetable",
+      "image_resource": "string_beans",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 19,
+      "food_name": "Cabbage",
+      "scientific_name": "Brassica oleracea var. capitata",
+      "category": "Vegetable",
+      "image_resource": "cabbage",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 20,
+      "food_name": "Carrot",
+      "scientific_name": "Daucus carota",
+      "category": "Vegetable",
+      "image_resource": "carrot",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 21,
+      "food_name": "Potato",
+      "scientific_name": "Solanum tuberosum",
+      "category": "Vegetable",
+      "image_resource": "potato",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 22,
+      "food_name": "Sweet potato",
+      "scientific_name": "Ipomoea batatas",
+      "category": "Vegetable",
+      "image_resource": "sweet_potato",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 23,
+      "food_name": "Onion",
+      "scientific_name": "Allium cepa",
+      "category": "Vegetable",
+      "image_resource": "onion",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 24,
+      "food_name": "Garlic",
+      "scientific_name": "Allium sativum",
+      "category": "Vegetable",
+      "image_resource": "garlic",
+      "benefits": [],
+      "nutrition": []
+    },
+    {
+      "food_id": 25,
+      "food_name": "Cucumber",
+      "scientific_name": "Cucumis sativus",
+      "category": "Vegetable",
+      "image_resource": "cucumber",
+      "benefits": [],
+      "nutrition": []
     }
   ]
 }

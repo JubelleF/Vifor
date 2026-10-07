@@ -1,6 +1,7 @@
 package com.vifor.app.ml
 
 import android.content.Context
+import android.util.Log
 import com.vifor.app.data.ViforDatabase
 import kotlinx.coroutines.flow.first
 
@@ -19,3 +20,12 @@ class PlaceholderClassifier(private val context: Context) : FoodClassifier {
         return Recognition(foodName = pick.foodName, confidence = 0.0)
     }
 }
+
+// Uses the real model if its files are in assets/model, otherwise the temporary classifier
+fun createClassifier(context: Context): FoodClassifier =
+    try {
+        OnnxClassifier(context)
+    } catch (e: Exception) {
+        Log.w("ViFoR", "Model not loaded, using placeholder classifier: ${e.message}")
+        PlaceholderClassifier(context)
+    }

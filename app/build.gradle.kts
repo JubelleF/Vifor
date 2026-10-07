@@ -46,6 +46,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
+    // ONNX Runtime (on-device food recognition) and photo rotation
+    implementation(libs.onnxruntime.android)
+    implementation(libs.androidx.exifinterface)
+
     // Room (offline SQLite)
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
