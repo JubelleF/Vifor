@@ -7,7 +7,7 @@ int color teal_700 0x0
 int color white 0x0
 int drawable ic_launcher_background 0x0
 int drawable ic_launcher_foreground 0x0
-int font mayashita 0x0
+int font takugiregular 0x0
 int mipmap ic_launcher 0x0
 int mipmap ic_launcher_foreground 0x0
 int mipmap ic_launcher_round 0x0

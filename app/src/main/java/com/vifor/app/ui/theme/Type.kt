@@ -8,14 +8,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.vifor.app.R
 
-// Download Mayashita from https://ifonts.xyz/mayashita-font.html, then copy the file to
-// app/src/main/res/font/mayashita.ttf  (name must be lowercase; use mayashita.otf if it is an .otf).
-val Mayashita = FontFamily(Font(R.font.mayashita))
+// app/src/main/res/font/takugiregular.ttf
+val AppFont = FontFamily(Font(R.font.takugiregular))
 
-val HeadingFont: FontFamily = Mayashita
-// Mayashita is a display-style face. If long body text feels hard to read, change this one line to
-// FontFamily.Default and only the headings/labels will keep the Mayashita look.
-val BodyFont: FontFamily = Mayashita
+val HeadingFont: FontFamily = AppFont
+val BodyFont: FontFamily = AppFont
 
 // Hierarchy: each step is clearly bigger/heavier than the one below it.
 //   Display 44  >  Headline 30  >  Title 22 / 18 / 15  >  Body 16 / 14 / 12  >  Label 12 caps / 11
