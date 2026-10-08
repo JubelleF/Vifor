@@ -68,7 +68,15 @@ class OnnxClassifier(context: Context) : FoodClassifier {
         }
 
     private fun loadUpright(path: String): Bitmap? {
-        val bmp = BitmapFactory.decodeFile(path) ?: return null
+        // Read the image size first, then decode a smaller copy to avoid running out of memory
+        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
+        BitmapFactory.decodeFile(path, bounds)
+        var sample = 1
+        while (bounds.outWidth / (sample * 2) >= 448 && bounds.outHeight / (sample * 2) >= 448) sample *= 2
+
+        val bmp = BitmapFactory.decodeFile(path, BitmapFactory.Options().apply { inSampleSize = sample })
+            ?: return null
+
         val degrees = when (
             ExifInterface(path).getAttributeInt(
                 ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL
