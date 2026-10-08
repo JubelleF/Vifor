@@ -1,31 +1,38 @@
 package com.vifor.app.navigation
 
 import androidx.compose.runtime.Composable
-import com.vifor.app.ui.scan.ScanScreen
 import androidx.compose.ui.Modifier
-import com.vifor.app.ui.settings.SettingsScreen
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.vifor.app.ui.favorites.FavoritesScreen
 import com.vifor.app.ui.history.HistoryScreen
 import com.vifor.app.ui.home.HomeScreen
 import com.vifor.app.ui.result.FoodResultScreen
+import com.vifor.app.ui.scan.ScanScreen
 import com.vifor.app.ui.search.SearchScreen
+import com.vifor.app.ui.settings.SettingsScreen
 
+// The NavController now lives in MainActivity so the bottom bar can share it.
 @Composable
 fun ViforNavGraph(
-    modifier: Modifier = Modifier,
-    navController: NavHostController = rememberNavController()
+    navController: NavHostController,
+    modifier: Modifier = Modifier
 ) {
     val back: () -> Unit = { navController.popBackStack() }
 
     NavHost(navController, startDestination = Routes.HOME, modifier = modifier) {
         composable(Routes.HOME) {
-            HomeScreen(onNavigate = { navController.navigate(it) })
+            HomeScreen(
+                onNavigate = { route ->
+                    // Tabs switch like the bottom bar; Scan is a normal push
+                    if (route in Routes.TABS) navController.navigateToTab(route)
+                    else navController.navigate(route)
+                },
+                onFoodClick = { navController.navigate(Routes.result(it)) }
+            )
         }
         composable(Routes.SEARCH) {
             SearchScreen(
@@ -60,5 +67,13 @@ fun ViforNavGraph(
             )
         }
         composable(Routes.SETTINGS) { SettingsScreen(onBack = back) }
+    }
+}
+
+fun NavHostController.navigateToTab(route: String) {
+    navigate(route) {
+        popUpTo(Routes.HOME) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
     }
 }

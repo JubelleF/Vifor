@@ -45,6 +45,16 @@ interface FoodDao {
 interface ScanDao {
     @Insert
     suspend fun insert(scan: ScanRecord): Long   // returns the new scan_id
+
+    // Distinct foods, most recently scanned first (Home > Recent Scans)
+    @Query(
+        "SELECT f.* FROM tbl_recognized_food f " +
+                "INNER JOIN tbl_scan_record s ON f.food_name = s.food_name COLLATE NOCASE " +
+                "GROUP BY f.food_id " +
+                "ORDER BY MAX(s.scan_date) DESC " +
+                "LIMIT :limit"
+    )
+    fun getRecentFoods(limit: Int): Flow<List<RecognizedFood>>
 }
 
 @Dao

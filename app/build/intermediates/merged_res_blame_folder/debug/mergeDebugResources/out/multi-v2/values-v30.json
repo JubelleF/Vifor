@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.vifor.app-mergeDebugResources-1:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\9.5.0\\transforms\\3f68bc147a8c9187cb9b8cc4cbdb0803\\transformed\\material3\\res\\values-v30\\values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

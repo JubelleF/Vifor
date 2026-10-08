@@ -1,0 +1,15 @@
+Apple
+Banana
+Cabbage
+Carrot
+Cucumber
+Eggplant
+Garlic
+Mango
+Onion
+Orange
+Pineapple
+Potato
+Sweet potato
+Tomato
+Watermelon

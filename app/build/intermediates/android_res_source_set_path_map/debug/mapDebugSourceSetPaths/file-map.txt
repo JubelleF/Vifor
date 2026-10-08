@@ -1,0 +1,8 @@
+com.vifor.app-pngs-0 C:\Projects\ViFoR\app\build\generated\res\pngs\debug
+com.vifor.app-updated_navigation_xml-1 C:\Projects\ViFoR\app\build\generated\updated_navigation_xml\debug
+com.vifor.app-packageDebugResources-2 C:\Projects\ViFoR\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.vifor.app-packageDebugResources-3 C:\Projects\ViFoR\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.vifor.app-debug-4 C:\Projects\ViFoR\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.vifor.app-debug-5 C:\Projects\ViFoR\app\src\debug\res
+com.vifor.app-main-6 C:\Projects\ViFoR\app\src\main\res
+gradleHome-0 C:\Users\Admin\.gradle
